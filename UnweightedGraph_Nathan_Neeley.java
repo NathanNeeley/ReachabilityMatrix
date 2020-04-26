@@ -1,10 +1,3 @@
-// Name:       Nathan Neeley
-// Class:      CS 5040
-// Term:       Spring 2020
-// Instructor: Dr. Haddad
-// Assignment: 7
-// IDE:        jGrasp
-
 import java.util.*;
 
 public class UnweightedGraph_Nathan_Neeley<V> extends AbstractGraph_Nathan_Neeley<V>
