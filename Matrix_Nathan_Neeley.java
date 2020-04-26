@@ -1,3 +1,10 @@
+// Name:       Nathan Neeley
+// Class:      CS 5040
+// Term:       Spring 2020
+// Instructor: Dr. Haddad
+// Assignment: 7
+// IDE:        jGrasp
+
 import java.util.*;
 
 public class Matrix_Nathan_Neeley<V> {
@@ -95,7 +102,7 @@ public class Matrix_Nathan_Neeley<V> {
       for (int i = 0; i < numberOfNodes; i++) {
          for (int j = 0; j < numberOfNodes; j++) {
             if (booleanMatrix[numberOfNodes-1][i][j] >= 1)
-               counter = counter + 1;
+               counter = booleanMatrix[numberOfNodes-1][i][j] + counter;
          }
       }
       
@@ -179,7 +186,7 @@ public class Matrix_Nathan_Neeley<V> {
          counter = 0;
          for(int j = 0; j < adjacencyMatrix[0].length; j++){
             if(i == j && booleanMatrix[adjacencyMatrix.length - 1][i][j] > 0)  
-               counter++;
+               counter = booleanMatrix[adjacencyMatrix.length - 1][i][j] + counter;
          }
          cycles = cycles + counter;
       }
@@ -196,7 +203,7 @@ public class Matrix_Nathan_Neeley<V> {
             counter = 0;
             for(int j = 0; j < booleanMatrix.length; j++){
                if(i == j && booleanMatrix[k][i][j] > 0)
-                  counter++;
+                  counter = booleanMatrix[k][i][j] + counter;
             }
             cycles = cycles + counter;
          }
